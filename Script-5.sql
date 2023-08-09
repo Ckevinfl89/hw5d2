@@ -9,7 +9,7 @@ CREATE TABLE "Customer" (
 
 CREATE TABLE "Ticket" (
   "ticket_id" SERIAL PRIMARY KEY,
-  "price" NUMERIC(2,2),
+  "price" NUMERIC(4,2),
   "movie_id" INTEGER,
    FOREIGN KEY ("movie_id") REFERENCES "Movie"("movie_id"),
   "theatre_id" INTEGER,
